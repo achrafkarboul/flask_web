@@ -16,8 +16,6 @@ def get_db_connection():
     conn.autocommit = True
     return  conn
 
-
-
 @app.route('/')
 def main():
     return render_template('main.html')
